@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40'
+make: Leaving directory `/Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40'
+ 
+make: *** No targets.  Stop.
+

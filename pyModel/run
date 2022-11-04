@@ -1,0 +1,1 @@
+pytest --cache-clear --disable-warnings Test_Pytest_Enigma.py --full-trace

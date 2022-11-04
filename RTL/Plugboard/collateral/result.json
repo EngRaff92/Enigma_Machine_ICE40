@@ -1,0 +1,605 @@
+{
+  "creator": "Yosys 0.10+16 (git sha1 d8f6d7b18, x86_64-apple-darwin20.2-clang 10.0.0-4ubuntu1 -fPIC -Os)",
+  "modules": {
+    "plugboard": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "top": "00000000000000000000000000000001",
+        "src": "../rtl/plugboard.sv:9.1-109.10"
+      },
+      "parameter_default_values": {
+        "ALPHABET_LEN": "00000000000000000000000000011010",
+        "PORTLEN": "00000000000000000000000000000101",
+        "SELFPLUGGED": "00000000000000000000000000000000"
+      },
+      "ports": {
+        "input_letter": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6 ]
+        },
+        "pb_cs_n": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "output_letter": {
+          "direction": "output",
+          "bits": [ 8, 9, 10, 11, 12 ]
+        },
+        "error": {
+          "direction": "output",
+          "bits": [ 13 ]
+        }
+      },
+      "cells": {
+        "$and$../rtl/plugboard.sv:67$6": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "../rtl/plugboard.sv:67.22-67.64"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 15 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$and$../rtl/plugboard.sv:72$11": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "../rtl/plugboard.sv:72.12-72.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 18 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$eq$../rtl/plugboard.sv:67$5": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "../rtl/plugboard.sv:67.40-67.63"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, 6 ],
+            "B": [ 20, 21, 22, 23, 24 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$gt$../rtl/plugboard.sv:66$3": {
+          "hide_name": 1,
+          "type": "$gt",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "../rtl/plugboard.sv:66.24-66.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, 6 ],
+            "B": [ "0", "1", "0", "1", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 25 ]
+          }
+        },
+        "$meminit$\\lut_plug$../rtl/plugboard.sv:0$13": {
+          "hide_name": 1,
+          "type": "$meminit_v2",
+          "parameters": {
+            "ABITS": "00000000000000000000000000100000",
+            "MEMID": "\\lut_plug",
+            "PRIORITY": "00000000000000000000000000001101",
+            "WIDTH": "00000000000000000000000000000110",
+            "WORDS": "00000000000000000000000000011010"
+          },
+          "attributes": {
+            "src": "../rtl/plugboard.sv:0.0-0.0"
+          },
+          "port_directions": {
+            "ADDR": "input",
+            "DATA": "input",
+            "EN": "input"
+          },
+          "connections": {
+            "ADDR": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "DATA": [ "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "1", "1", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "1", "0", "1", "0", "0", "0", "0", "1", "1", "0", "0", "0", "1", "1", "1", "0", "0", "0", "0", "0", "0", "1", "0", "0", "1", "0", "0", "1", "0", "0", "0", "1", "0", "1", "0", "0", "1", "1", "0", "1", "0", "0", "0", "0", "1", "1", "0", "0", "1", "0", "1", "1", "0", "0", "0", "1", "1", "1", "0", "0", "1", "1", "1", "1", "0", "0", "0", "0", "0", "0", "1", "0", "1", "0", "0", "0", "1", "0", "0", "1", "0", "0", "1", "0", "1", "1", "0", "0", "1", "0", "0", "0", "1", "0", "1", "0", "1", "0", "1", "0", "1", "0", "0", "1", "1", "0", "1", "0", "1", "1", "1", "0", "1", "0", "0", "0", "0", "1", "1", "0", "1", "0", "0", "1", "1", "0" ],
+            "EN": [ "1", "1", "1", "1", "1", "1" ]
+          }
+        },
+        "$memrd$\\lut_plug$../rtl/plugboard.sv:56$2": {
+          "hide_name": 1,
+          "type": "$memrd",
+          "parameters": {
+            "ABITS": "00000000000000000000000000000101",
+            "CLK_ENABLE": "00000000000000000000000000000000",
+            "CLK_POLARITY": "00000000000000000000000000000000",
+            "MEMID": "\\lut_plug",
+            "TRANSPARENT": "00000000000000000000000000000000",
+            "WIDTH": "00000000000000000000000000000110"
+          },
+          "attributes": {
+            "src": "../rtl/plugboard.sv:56.23-56.31"
+          },
+          "port_directions": {
+            "ADDR": "input",
+            "CLK": "input",
+            "DATA": "output",
+            "EN": "input"
+          },
+          "connections": {
+            "ADDR": [ 2, 3, 4, 5, 6 ],
+            "CLK": [ "x" ],
+            "DATA": [ 26, 27, 28, 29, 30, 31 ],
+            "EN": [ "x" ]
+          }
+        },
+        "$not$../rtl/plugboard.sv:72$10": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "../rtl/plugboard.sv:72.24-72.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$not$../rtl/plugboard.sv:72$9": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "../rtl/plugboard.sv:72.13-72.19"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$or$../rtl/plugboard.sv:67$7": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "../rtl/plugboard.sv:67.21-67.76"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 25 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$procmux$17": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "../rtl/plugboard.sv:72.12-72.33|../rtl/plugboard.sv:72.9-75.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0" ],
+            "B": [ 32, 33, 34, 35, 36 ],
+            "S": [ 19 ],
+            "Y": [ 8, 9, 10, 11, 12 ]
+          }
+        },
+        "$procmux$20": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "../rtl/plugboard.sv:51.12-51.20|../rtl/plugboard.sv:51.9-59.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 26, 27, 28, 29, 30 ],
+            "B": [ "0", "0", "0", "0", "0" ],
+            "S": [ 25 ],
+            "Y": [ 20, 21, 22, 23, 24 ]
+          }
+        },
+        "$procmux$23": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "../rtl/plugboard.sv:51.12-51.20|../rtl/plugboard.sv:51.9-59.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ "0" ],
+            "S": [ 25 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$procmux$26": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000110"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "../rtl/plugboard.sv:51.12-51.20|../rtl/plugboard.sv:51.9-59.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 26, 27, 28, 29, 30, 31 ],
+            "B": [ "0", "0", "0", "0", "0", "0" ],
+            "S": [ 25 ],
+            "Y": [ 37, 38, 39, 40, 41, 42 ]
+          }
+        },
+        "$ternary$../rtl/plugboard.sv:73$12": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "src": "../rtl/plugboard.sv:73.31-73.63"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, 6 ],
+            "B": [ 20, 21, 22, 23, 24 ],
+            "S": [ 14 ],
+            "Y": [ 32, 33, 34, 35, 36 ]
+          }
+        }
+      },
+      "memories": {
+        "lut_plug": {
+          "hide_name": 0,
+          "attributes": {
+            "src": "../rtl/plugboard.sv:41.23-41.31"
+          },
+          "width": 6,
+          "start_offset": 0,
+          "size": 26
+        }
+      },
+      "netnames": {
+        "$0\\LUT_OUT[4:0]": {
+          "hide_name": 1,
+          "bits": [ 20, 21, 22, 23, 24 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:0.0-0.0"
+          }
+        },
+        "$0\\Rvalue[5:0]": {
+          "hide_name": 1,
+          "bits": [ 37, 38, 39, 40, 41, 42 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:0.0-0.0"
+          }
+        },
+        "$0\\output_letter[4:0]": {
+          "hide_name": 1,
+          "bits": [ 8, 9, 10, 11, 12 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:0.0-0.0"
+          }
+        },
+        "$0\\plugged[0:0]": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:0.0-0.0"
+          }
+        },
+        "$1\\LUT_OUT[4:0]": {
+          "hide_name": 1,
+          "bits": [ 20, 21, 22, 23, 24 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:0.0-0.0"
+          }
+        },
+        "$1\\Rvalue[5:0]": {
+          "hide_name": 1,
+          "bits": [ 37, 38, 39, 40, 41, 42 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:0.0-0.0"
+          }
+        },
+        "$1\\output_letter[4:0]": {
+          "hide_name": 1,
+          "bits": [ 8, 9, 10, 11, 12 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:0.0-0.0"
+          }
+        },
+        "$1\\plugged[0:0]": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:0.0-0.0"
+          }
+        },
+        "$and$../rtl/plugboard.sv:67$6_Y": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:67.22-67.64"
+          }
+        },
+        "$and$../rtl/plugboard.sv:72$11_Y": {
+          "hide_name": 1,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:72.12-72.33"
+          }
+        },
+        "$eq$../rtl/plugboard.sv:67$4_Y": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:67.23-67.35"
+          }
+        },
+        "$eq$../rtl/plugboard.sv:67$5_Y": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:67.40-67.63"
+          }
+        },
+        "$gt$../rtl/plugboard.sv:66$3_Y": {
+          "hide_name": 1,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:66.24-66.51"
+          }
+        },
+        "$memrd$\\lut_plug$../rtl/plugboard.sv:56$2_DATA": {
+          "hide_name": 1,
+          "bits": [ 26, 27, 28, 29, 30, 31 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:56.23-56.31"
+          }
+        },
+        "$not$../rtl/plugboard.sv:72$10_Y": {
+          "hide_name": 1,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:72.24-72.32"
+          }
+        },
+        "$not$../rtl/plugboard.sv:72$9_Y": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:72.13-72.19"
+          }
+        },
+        "$or$../rtl/plugboard.sv:67$7_Y": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:67.21-67.76"
+          }
+        },
+        "$procmux$17_Y": {
+          "hide_name": 1,
+          "bits": [ 8, 9, 10, 11, 12 ],
+          "attributes": {
+          }
+        },
+        "$procmux$18_CMP": {
+          "hide_name": 1,
+          "bits": [ 19 ],
+          "attributes": {
+          }
+        },
+        "$procmux$20_Y": {
+          "hide_name": 1,
+          "bits": [ 20, 21, 22, 23, 24 ],
+          "attributes": {
+          }
+        },
+        "$procmux$21_CMP": {
+          "hide_name": 1,
+          "bits": [ 25 ],
+          "attributes": {
+          }
+        },
+        "$procmux$23_Y": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+          }
+        },
+        "$procmux$24_CMP": {
+          "hide_name": 1,
+          "bits": [ 25 ],
+          "attributes": {
+          }
+        },
+        "$procmux$26_Y": {
+          "hide_name": 1,
+          "bits": [ 37, 38, 39, 40, 41, 42 ],
+          "attributes": {
+          }
+        },
+        "$procmux$27_CMP": {
+          "hide_name": 1,
+          "bits": [ 25 ],
+          "attributes": {
+          }
+        },
+        "$ternary$../rtl/plugboard.sv:73$12_Y": {
+          "hide_name": 1,
+          "bits": [ 32, 33, 34, 35, 36 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:73.31-73.63"
+          }
+        },
+        "LUT_OUT": {
+          "hide_name": 0,
+          "bits": [ 20, 21, 22, 23, 24 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:47.25-47.32"
+          }
+        },
+        "Rvalue": {
+          "hide_name": 0,
+          "bits": [ 37, 38, 39, 40, 41, 42 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:49.25-49.31"
+          }
+        },
+        "error": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:22.33-22.38"
+          }
+        },
+        "input_letter": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:15.33-15.45"
+          }
+        },
+        "output_letter": {
+          "hide_name": 0,
+          "bits": [ 8, 9, 10, 11, 12 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:19.33-19.46"
+          }
+        },
+        "overflow": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:65.11-65.19"
+          }
+        },
+        "pb_cs_n": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:17.33-17.40"
+          }
+        },
+        "plugged": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "../rtl/plugboard.sv:48.25-48.32"
+          }
+        }
+      }
+    }
+  }
+}

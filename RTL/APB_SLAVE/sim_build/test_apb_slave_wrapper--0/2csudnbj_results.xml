@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1667255724" />
+    <testcase name="test_apb_slave_wrapper" classname="test_apb_slave_wrapper" file="/Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40/RTL/APB_SLAVE/sim/test_apb_slave_wrapper.py" lineno="16" time="0.023282766342163086" sim_time_ns="2467.0" ratio_time="105958.19945727305" />
+  </testsuite>
+</testsuites>

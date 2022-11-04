@@ -1,0 +1,108 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1>Encryption letter: C</h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 50%;
+            height: 400px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"group": 1, "id": 0, "label": "Entering Letter: C", "shape": "dot", "title": "Keyboard"}, {"group": 1, "id": 1, "label": "PB - FWD: C", "shape": "dot", "title": "Plugboard"}, {"group": 1, "id": 2, "label": "R1 - FWD: P", "shape": "dot", "title": "Rotor1"}, {"group": 1, "id": 3, "label": "R2 - FWD: P", "shape": "dot", "title": "Rotor2"}, {"group": 1, "id": 4, "label": "R3 - FWD: H", "shape": "dot", "title": "Rotor3"}, {"group": 1, "id": 5, "label": "RE: X", "shape": "dot", "title": "Reflector"}, {"group": 1, "id": 6, "label": "R3 - BWD: N", "shape": "dot", "title": "Rotor3"}, {"group": 1, "id": 7, "label": "R2 - BWD: X", "shape": "dot", "title": "Rotor2"}, {"group": 1, "id": 8, "label": "R1 - BWD: A", "shape": "dot", "title": "Rotor1"}, {"group": 1, "id": 9, "label": "PB - BWD: A", "shape": "dot", "title": "c"}]);
+        edges = new vis.DataSet([{"arrows": "to", "from": 0, "to": 1}, {"arrows": "to", "from": 1, "to": 2}, {"arrows": "to", "from": 2, "to": 3}, {"arrows": "to", "from": 3, "to": 4}, {"arrows": "to", "from": 4, "to": 5}, {"arrows": "to", "from": 5, "to": 6}, {"arrows": "to", "from": 6, "to": 7}, {"arrows": "to", "from": 7, "to": 8}, {"arrows": "to", "from": 8, "to": 9}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

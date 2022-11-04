@@ -1,0 +1,50 @@
+# read design with -SV option
+read_verilog -sv reflector.sv
+
+# generic define the top
+hierarchy -check -top reflector
+
+# Process
+proc
+
+# This will run major optimizations (NEVER use with ABC9)
+abc
+
+# This will run major optimizations if cells are available it will pass
+#abc9
+
+# This will be only used in case of FSM if after PROC could vanish the prior proc command so a new one is needed
+#fsm
+
+# This will OPT loads of logic making the result mostly similar to the simple map and no map
+#opt
+
+# This will OPT loads of logic making the result mostly similar to the simple map and no map
+#clean
+
+# Quite similar to opt -full all wires are flattened, could be followed by another proc in case wiped out
+#flatten
+#proc
+
+# More flattened signals but still no map to cells at all
+#simplemap
+
+# No Mapping to any memory cell at all
+#memory -nomap
+
+# No mapping to any memory cell is an OPT command to reduce X values (signals removed in case)
+#wreduce -memx
+
+# File in SYNTH will result in no cell map and flattened mostly similar to the input file
+#opt -full
+
+# This will produce a single cell (AND - INVERT) logic, really low level
+#aigmap
+
+# Dot view file
+show -prefix view_file -notitle -colors 2 -width -format dot
+
+# write json file
+write_json result.json
+# write synth file
+write_verilog -sv synth.sv

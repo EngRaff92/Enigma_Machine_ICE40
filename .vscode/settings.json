@@ -1,0 +1,8 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "python.formatting.provider": "black",
+    "python.analysis.extraPaths": [
+        "./RTL/Plugboard/scripts",
+        "./RTL/Reflector/scripts"
+    ]
+}

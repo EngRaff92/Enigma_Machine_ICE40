@@ -1,0 +1,57 @@
+WARNING  root:simulator.py:1093 'SIM=icarus' overrides kwarg 'simulator=('icarus',)'
+INFO     cocotb:simulator.py:291 Running command: iverilog -o /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40/RTL/APB_SLAVE/sim_build/test_apb_slave_wrapper--0/apb_slave_wrapper.vvp -D COCOTB_SIM=1 -s apb_slave_wrapper -g2012 -Papb_slave_wrapper.DATA_WIDTH=32 -Papb_slave_wrapper.ADDR_WIDTH=5 -Papb_slave_wrapper.IMAGE="/Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40/RTL/APB_SLAVE/collateral//mem.hex" -g2012 /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40/RTL/APB_SLAVE/rtl/apb_slave.sv /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40/RTL/APB_SLAVE/rtl/apb_slave_wrapper.sv /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40/RTL/APB_SLAVE/rtl/rom.sv
+INFO     cocotb:simulator.py:291 Running command: vvp -M /opt/homebrew/lib/python3.9/site-packages/cocotb/libs -m libcocotbvpi_icarus /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40/RTL/APB_SLAVE/sim_build/test_apb_slave_wrapper--0/apb_slave_wrapper.vvp
+INFO     cocotb:simulator.py:302      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:78   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+INFO     cocotb:simulator.py:302      -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+INFO     cocotb:simulator.py:302      0.00ns INFO     cocotb                             Running on Icarus Verilog version 11.0 (stable)
+INFO     cocotb:simulator.py:302      0.00ns INFO     cocotb                             Running tests with cocotb v1.7.1 from /opt/homebrew/lib/python3.9/site-packages/cocotb
+INFO     cocotb:simulator.py:302      0.00ns INFO     cocotb                             Seeding Python random module with 1667255724
+INFO     cocotb:simulator.py:302      0.00ns INFO     cocotb.regression                  Found test test_apb_slave_wrapper.test_apb_slave_wrapper
+INFO     cocotb:simulator.py:302      0.00ns INFO     cocotb.regression                  running test_apb_slave_wrapper (1/1)
+INFO     cocotb:simulator.py:302                                                           Test for apb_slave_wrapper
+INFO     cocotb:simulator.py:302      0.00ns INFO     cocotb                             #### START test_apb_slave_wrapper #####
+INFO     cocotb:simulator.py:302   2467.00ns INFO     cocotb.regression                  test_apb_slave_wrapper passed
+INFO     cocotb:simulator.py:302   2467.00ns INFO     cocotb.regression                  *******************************************************************************************************
+INFO     cocotb:simulator.py:302                                                         ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+INFO     cocotb:simulator.py:302                                                         *******************************************************************************************************
+INFO     cocotb:simulator.py:302                                                         ** test_apb_slave_wrapper.test_apb_slave_wrapper   PASS        2467.00           0.02     105958.20  **
+INFO     cocotb:simulator.py:302                                                         *******************************************************************************************************
+INFO     cocotb:simulator.py:302                                                         ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                2467.00           0.12      19740.33  **
+INFO     cocotb:simulator.py:302                                                         *******************************************************************************************************
+INFO     cocotb:simulator.py:302 
+INFO     cocotb:simulator.py:302 WARNING: /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40/RTL/APB_SLAVE/rtl/rom.sv:49: $readmemh: Standard inconsistency, following 1364-2005.
+INFO     cocotb:simulator.py:302 Loading Image file: /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40/RTL/APB_SLAVE/collateral//mem.hex
+INFO     cocotb:simulator.py:302 VCD info: dumpfile dump.vcd opened for output.
+INFO     cocotb:simulator.py:302 VCD warning: $dumpvars: Unsupported argument type (vpiPackage)
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[0] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[1] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[2] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[3] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[4] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[5] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[6] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[7] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[8] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[9] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[10] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[11] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[12] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[13] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[14] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[15] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[16] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[17] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[18] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[19] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[20] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[21] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[22] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[23] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[24] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[25] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[26] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[27] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[28] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[29] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[30] will conflict with an escaped identifier.
+INFO     cocotb:simulator.py:302 VCD warning: array word apb_slave_wrapper.u_rom.MEMARRAY[31] will conflict with an escaped identifier.

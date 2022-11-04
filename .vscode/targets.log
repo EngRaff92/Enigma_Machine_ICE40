@@ -1,0 +1,254 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Fri Sep 23 21:18:56 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+desk = /Users/raffaelemac/Desktop/
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"it","availableLanguages":{"*":"it"},"_languagePackId":"733e63a346861b85a80ab453548d8e7a.it","_translationsConfigFile":"/Users/raffaelemac/Library/Application Support/Code/clp/733e63a346861b85a80ab453548d8e7a.it/tcf.json","_cacheRoot":"/Users/raffaelemac/Library/Application Support/Code/clp/733e63a346861b85a80ab453548d8e7a.it","_resolvedLanguagePackCoreLocation":"/Users/raffaelemac/Library/Application Support/Code/clp/733e63a346861b85a80ab453548d8e7a.it/74b1f979648cc44d385a2286793c226e611f59e7","_corruptedFile":"/Users/raffaelemac/Library/Application Support/Code/clp/733e63a346861b85a80ab453548d8e7a.it/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# environment
+gen_scripts = /Volumes/My_Data/GENERAL_SCRIPTS
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+myproj = /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS
+# environment
+ice40_proj = /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ICE40_PROJECTS
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /
+# environment
+VIM_HOME = /opt/homebrew/Cellar/macvim/8.2-171_1/bin/
+# environment
+PATH = /Users/raffaelemac/rggen/bin:/opt/homebrew/Cellar/ruby/3.1.2/bin:/opt/homebrew/opt/riscv-gnu-toolchain/bin/:/opt/homebrew/opt/riscv-openocd/bin:/opt/homebrew/opt/riscv-gnu-toolchain/bin/:/opt/homebrew/Cellar/macvim/8.2-171_1/bin/:/opt/homebrew/Cellar/python@3.8/3.8.13/bin:/usr/local/opt/bison/bin:/Users/raffaelemac/oss_cad_suite/bin:/usr/local/bin:/Users/raffaelemac/open_vcdiff/usr/bin:/opt/homebrew/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion Tech Preview.app/Contents/Public
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+libcell = /Volumes/My_Data/TECHNOLOGY_SKY130_LIBRARY_CELL
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.YPGW12EPSX/Listeners
+# environment
+COCO_COV = /Users/raffaelemac/cocotb_coverage
+# environment
+reg_gen = /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/RDL_REG_GEN/
+# environment
+PWD = /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/ENIGMA_ICE40
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/raffaelemac
+# environment
+RSMB5_PRJ = /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/RISCV_PROJECT/RSMB5_PROJECT
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/raffaelemac/Library/Application Support/Code/CachedData/74b1f979648cc44d385a2286793c226e611f59e7
+# environment
+LOGNAME = raffaelemac
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/raffaelemac/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+RISCV_DOC = /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/RISCV_PROJECT/RISCV_DOCUMENTS
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = raffaelemac
+# makefile
+.DEFAULT_GOAL := 
+# environment
+main_path = /Volumes/My_Data
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/9c/89xjkzt573lghnkjsg23gd4c0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+RISCV_TRAINING = /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/RISCV_PROJECT/RISCV_TRAININGS
+# environment
+VSCODE_IPC_HOOK = /Users/raffaelemac/Library/Application Support/Code/1.71.2-main.sock
+# environment
+download = /Users/raffaelemac/Downloads
+# environment
+MallocNanoZone = 0
+# environment
+PYTHONPATH = /opt/homebrew/lib/python3.9/site-packages/:/Users/raffaelemac/boolector/build/lib
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.21183688.21183694
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# automatic
+%F = $(notdir $%)
+# environment
+tryouts = /Volumes/My_Data/TOOLS_TRYOUTS
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x4
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+apb_project = /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/APB_PROTOCOL
+# environment
+COCO_HOME = /Users/raffaelemac/cocotb_main
+# environment
+EDITOR = vim
+# environment
+LC_ALL = C
+# environment
+RISCV_PRJ = /Volumes/My_Data/MY_SYSTEMVERILOG_UVM_PROJECTS/RISCV_PROJECT/RISCV_PROJECT
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+vimautoload = /opt/homebrew/Cellar/macvim/8.2-171_1/MacVim.app/Contents/Resources/vim/runtime/autoload/
+# environment
+vivado_prj = /Volumes/My_Data/VIVADO_PRJ
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+COCO_UVM = /Users/raffaelemac/uvm_python
+# environment
+blog = /Users/raffaelemac/Desktop/MY_BLOG
+# environment
+VSCODE_PID = 1108
+# environment
+PEAK_UVM = /Users/raffaelemac/peakrdl_uvm
+# variable set hash-table stats:
+# Load=87/1024=8%, Rehash=0, Collisions=3/109=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777237, inode 105199): 9 files, no impossibilities.
+
+# 9 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-09 21:54:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=4/1024=0%, Rehash=0, Collisions=0/16=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Fri Sep 23 21:18:56 2022
+
+ 
+make: *** No rule to make target `all'.  Stop.
+

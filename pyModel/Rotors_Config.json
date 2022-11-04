@@ -1,0 +1,80 @@
+{
+    "Rotors":{
+        "IC":{
+            "Name"  :"IC",
+            "Wiring":"DMTWSILRUYQNKFEJCAZBPGXOHV",
+            "Model" :"Commercial",
+            "Number":"AB"
+        },
+        "IIC":{
+            "Name"  :"IC",
+            "Wiring":"HQZGPJTMOBLNCIFDYAWVEUSRKX",
+            "Model" :"Commercial",
+            "Number":"AB"
+        },
+        "IIIC":{
+            "Name"  :"IC",
+            "Wiring":"UQNTLSZFMREHDPXKIBVYGJCWOA",
+            "Model" :"Commercial",
+            "Number":"AB"
+        },
+        "IR":{
+            "Name"  :"IR",
+            "Wiring":"JGDQOXUSCAMIFRVTPNEWKBLZYH",
+            "Model" :"Railways",
+            "Number":"Rocket"
+        },
+        "IIR":{
+            "Name"  :"IIR",
+            "Wiring":"NTZPSFBOKMWRCJDIVLAEYUXHGQ",
+            "Model" :"Railways",
+            "Number":"Rocket"
+        },
+        "IIIR":{
+            "Name"  :"IIR",
+            "Wiring":"JVIUBHTCDYAKEQZPOSGXNRMWFL",
+            "Model" :"Railways",
+            "Number":"Rocket"
+        },     
+        "UKW":{
+            "Name"  :"UKW",
+            "Wiring":"QYHOGNECVPUZTFDJAXWMKISRBL",
+            "Model" :"Railways",
+            "Number":"Rocket"
+        },     
+        "ETWR":{
+            "Name"  :"ETWR",
+            "Wiring":"QWERTZUIOASDFGHJKPYXCVBNML",
+            "Model" :"Railways",
+            "Number":"Rocket"
+        },     
+        "I" :{
+            "Name"  : "I",
+            "Wiring":"EKMFLGDQVZNTOWYHXUSPAIBRCJ",
+            "Notch" : "Y",
+            "Turn"  : "Q",
+            "Number": "Enigma 1"
+        },
+        "II" :{
+            "Name"  : "II",
+            "Wiring":"AJDKSIRUXBLHWTMCQGZNPYFVOE",
+            "Notch" : "M",
+            "Turn"  : "E",
+            "Number": "Enigma 1"
+        },   
+        "III" :{
+            "Name"  : "III",
+            "Wiring": "BDFHJLCPRTXVZNYEIWGAKMUSQO",
+            "Notch" : "D",
+            "Turn"  : "V",
+            "Number": "Enigma 1"
+        }
+    },
+    "Reflectors":{
+        "A"     : "EJMZALYXVBWFCRQUONTSPIKHGD",
+        "B"     : "YRUHQSLDPXNGOKMIEBFZCWVJAT",
+        "C"     : "FVPJIAOYEDRZXWGCTKUQSBNMHL",
+        "ETW"   : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "UKW"   : "QYHOGNECVPUZTFDJAXWMKISRBL"
+    }
+}
